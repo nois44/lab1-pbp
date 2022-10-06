@@ -16,18 +16,21 @@
         <span class="text-danger">{{ form.username.errors }}</span>
         {% endif %}
       </div>
+
       <div class="d-flex flex-column mb-2">
         <label for="password">Password</label>
         {{form.password1}} {% if form.password1.errors %}
         <span class="text-danger">{{ form.password1.errors }}</span>
         {% endif %}
       </div>
+
       <div class="d-flex flex-column mb-2">
         <label for="password">Password Confirmation</label>
         {{form.password2}} {% if form.password2.errors %}
         <span class="text-danger">{{ form.password2.errors }}</span>
         {% endif %}
       </div>
+      
       <button class="btn btn-success">Register</button>
     </form>
   </div>
